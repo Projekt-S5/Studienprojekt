@@ -971,7 +971,7 @@ input, select, textarea {
 
 	#main > .container > .search {
 		position: absolute;
-		right: 7em;
+		right: 15em;
 		top: 2em;
 	}
 
@@ -1025,33 +1025,13 @@ input, select, textarea {
 		padding: 6em 0 8em 0;
 	}
 
-		#footer form input[type="text"],
-		#footer form input[type="email"],
-		#footer form input[type="password"],
-		#footer form select,
-		#footer form textarea {
-			background: #f7f7f7;
-		}
-
-			#footer form input[type="text"]:focus,
-			#footer form input[type="email"]:focus,
-			#footer form input[type="password"]:focus,
-			#footer form select:focus,
-			#footer form textarea:focus {
-				background: #fff;
-			}
-
-		#footer h2 {
-			text-align: center;
-		}
-
 /* Copyright */
 
 	#copyright {
 		border-top: solid 2px #e5e5e5;
 		text-align: center;
-		margin-top: 6em;
-		padding-top: 4em;
+		margin-top: 0.5em;
+		padding-top: 1em;
 	}
 
 /* XLarge */
@@ -1135,7 +1115,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 4em 0;
+				padding: 2em 0;
 			}
 
 		/* Copyright */
