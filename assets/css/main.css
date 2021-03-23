@@ -74,7 +74,44 @@ input, select, textarea {
 
 /* Akkordeon */
 
+#akkordeon:not(:target) .inhalt {
+	display: none;
+}
 
+#akkordeon:target .inhalt {
+	display: block;
+}
+
+#akkordeon:target .show {
+	display: none;
+}
+
+#akkordeon:not(:target) .hide {
+	display: none;
+}
+
+.inhalt {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	padding: 20px 20px 1px;
+	margin: 0px 0px 10px;
+}
+
+.show, .hide {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right: 95%;
+	background: rgb(254, 164, 0);
+	box-shadow:none!important;
+	color:#fff;
+	font-weight:bold;
+}
+.show:hover, .hide:hover {
+	background: rgb(255, 214, 118);
+	color:#fff!important;
+	transition:0.2s all ease-in-out!important;
+}
+	
 
 /* Basic */
 
