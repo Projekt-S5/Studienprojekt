@@ -72,6 +72,47 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Akkordeon */
+
+#akkordeon:not(:target) .inhalt {
+	display: none;
+}
+
+#akkordeon:target .inhalt {
+	display: block;
+}
+
+#akkordeon:target .show {
+	display: none;
+}
+
+#akkordeon:not(:target) .hide {
+	display: none;
+}
+
+.inhalt {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	padding: 20px 20px 1px;
+	margin: 0px 0px 10px;
+}
+
+.show, .hide {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right: 95%;
+	background: rgb(254, 164, 0);
+	box-shadow:none!important;
+	color:#fff;
+	font-weight:bold;
+}
+.show:hover, .hide:hover {
+	background: rgb(255, 214, 118);
+	color:#fff!important;
+	transition:0.2s all ease-in-out!important;
+}
+	
+
 /* Basic */
 
 	html {
@@ -494,7 +535,7 @@ input, select, textarea {
 
 /* Table */
 
-	table {
+	.table {
 		width: 100%;
 	}
 
@@ -920,6 +961,12 @@ input, select, textarea {
 
 /* Main */
 
+.Test {
+	background-color: #ccc;
+	margin-bottom: 0%;
+	padding-bottom: 0%;
+}
+
 	#main {
 		position: relative;
 		overflow: hidden;
@@ -929,8 +976,19 @@ input, select, textarea {
 
 	#main > .container > .search {
 		position: absolute;
-		right: 7em;
+		right: 15em;
 		top: 2em;
+	}
+
+	#main > .container > .newButton {
+		position: absolute;
+		top: 2em;
+		padding: 10px;
+		background: rgb(254, 164, 0);
+		box-shadow:none!important;
+		color:#fff;
+		font-weight:bold;
+		border-radius: 1em;
 	}
 
 	#main > .container > .search > #searchInput {
@@ -983,33 +1041,13 @@ input, select, textarea {
 		padding: 6em 0 8em 0;
 	}
 
-		#footer form input[type="text"],
-		#footer form input[type="email"],
-		#footer form input[type="password"],
-		#footer form select,
-		#footer form textarea {
-			background: #f7f7f7;
-		}
-
-			#footer form input[type="text"]:focus,
-			#footer form input[type="email"]:focus,
-			#footer form input[type="password"]:focus,
-			#footer form select:focus,
-			#footer form textarea:focus {
-				background: #fff;
-			}
-
-		#footer h2 {
-			text-align: center;
-		}
-
 /* Copyright */
 
 	#copyright {
 		border-top: solid 2px #e5e5e5;
 		text-align: center;
-		margin-top: 6em;
-		padding-top: 4em;
+		margin-top: 0.5em;
+		padding-top: 1em;
 	}
 
 /* XLarge */
@@ -1093,7 +1131,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 4em 0;
+				padding: 2em 0;
 			}
 
 		/* Copyright */
@@ -1478,10 +1516,22 @@ input, select, textarea {
 
 				/* Registration form */
 				container {  
-					padding: 10px;  
-				   background-color: white;  
+					padding: 20px;  
+				  background-color: white;  
 				}  
-			
+				  
+				input[type=text], input[type=password], textarea {  
+				  width: 100%;  
+				  padding: 15px;  
+				  margin: 5px 0 22px 0;  
+				  display: inline-block;  
+				  border: none;  
+				  background: #f1f1f1;  
+				}  
+				input[type=text]:focus, input[type=password]:focus {  
+				  background-color: #ED786A;  
+				  outline: none;  
+				}  
 				 div {  
 							padding: 5px 0;  
 						 }  

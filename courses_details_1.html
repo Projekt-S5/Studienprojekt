@@ -30,14 +30,14 @@
 							</ul>
 						</li>
 						<li>
-							<a class="active" href="students.html"><span>Student</span></a>
+							<a href="students.html"><span>Student</span></a>
 							<ul>
 								<li><a href="#">active</a></li>
 								<li><a href="#">inactive</a></li>
 								<li><a href="#">archived</a></li>
 							</ul>
 						</li>
-						<li><a href="courses.html"><span>Courses</span></a></li>
+						<li><a class="active" href="courses.html"><span>Courses</span></a></li>
 						<li><a href="index.html"><span>Data Admin</span></a></li>
 						<li><a href="index.html"><span>Settings</span></a></li>
 					</ul>
@@ -53,33 +53,35 @@
 		<section id="main">
 			<div class="container">
 				<div class="search">
-					<i class="fas fa-search"></i> <input id="searchInput" type="search"></input>
+					<i class="fas fa-search"></i> <input id="searchInput" type="search"/>
 				</div>
-				<!-- <button type="button" onclick="<a href="students_new.html"></a>New Student</button> -->
-				<a href="students_new.html" class="button">New Student</a>
-				<table>
+				<table class="Course">
 					<tr>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Status</th>
+						<td><label for="CourseID">Course ID</label></td>
+						<td><p class="Test">RTRC/GM</p></td>
 					</tr>
 					<tr>
-						<td>TestStudent1</td>
-						<td>Male</td>
-						<td>1234 5678901223</td>
-						<td>TestStudent1@web.de</td>
-						<td>active</td>
+						<td><label for="CourseName">Course Name</label></td>
+						<td><p class="Test">Fashion Design & Garment</p></td>
 					</tr>
 					<tr>
-						<td>TestStudent2</td>
-						<td>Male</td>
-						<td>46789579579778</td>
-						<td>TestStudent2@web.de</td>
-						<td>active</td>
+						<td><label for="CourseCode">Course Code</label></td>
+						<td><input id="CourseCode" type="text" /></td>
 					</tr>
 				</table>
+
+				<div id="akkordeon">
+					<a class="show" href="#akkordeon">Subjects</a>
+					<a class="hide" href="#">Subjects</a>
+					<div class="inhalt">
+						<input type="checkbox" id="TT" name="TradeTheory"/><label for="TT">Trade Theory</label>				
+						<input type="checkbox" id="TP" name="TradePractice"/><label for="TP">Trade Practice</label>			
+						<input type="checkbox" id="IP" name="ICTPractice"/><label for="IP">ICT Practice</label>					
+						<input type="checkbox" id="ES" name="Entreprenuership"/><label for="ES">Entreprenuership</label>			
+						<input type="checkbox" id="CS" name="CommunicationSkills"/><label for="CS">Communication Skills</label>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
