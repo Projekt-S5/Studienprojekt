@@ -1573,6 +1573,12 @@ input, select, textarea {
 }
 */
 
+/* Details */
+
+
+
+/* Formular New */
+
 .form-style-7{
 	max-width:100%;
 	margin:50px auto;
@@ -1601,11 +1607,7 @@ input, select, textarea {
 	margin-bottom: 30px;
 	border-radius: 3px;
 }
-.form-style-7 li:last-child{
-	border:none;
-	margin-bottom: 0px;
-	text-align: center;
-}
+
 .form-style-7 li > label{
 	display: block;
 	float: left;
