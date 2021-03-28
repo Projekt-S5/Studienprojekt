@@ -22,27 +22,27 @@
 
 				<!-- Nav -->
 				<nav id="nav">
-						<ul>
-							<li>
-								<a class="active" href="instructors.html"><span>Instructor</span></a>
-								<ul>
-									<li><a href="#">archived</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="students.html"><span>Student</span></a>
-								<ul>
-									<li><a href="#">active</a></li>
-									<li><a href="#">inactive</a></li>
-									<li><a href="#">archived</a></li>
-								</ul>
-							</li>
-							<li><a href="courses.html"><span>Courses</span></a></li>
-							<li><a href="index.html"><span>Data Admin</span></a></li>
-							<li><a href="index.html"><span>Settings</span></a></li>
-						</ul>
-					</nav>
-	
+					<ul>
+						<li>
+							<a class="active" href="instructors.html"><span>Instructor</span></a>
+							<ul>
+								<li><a href="#">archived</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="students.html"><span>Student</span></a>
+							<ul>
+								<li><a href="#">active</a></li>
+								<li><a href="#">inactive</a></li>
+								<li><a href="#">archived</a></li>
+							</ul>
+						</li>
+						<li><a href="courses.html"><span>Courses</span></a></li>
+						<li><a href="index.html"><span>Data Admin</span></a></li>
+						<li><a href="index.html"><span>Settings</span></a></li>
+					</ul>
+				</nav>
+
 				<!-- Logo -->
 				<img class="logo" src="images/rafiki-logo-menu-bar.gif" />
 
@@ -55,96 +55,66 @@
 				<div class="search">
 					<i class="fas fa-search"></i> <input id="searchInput" type="search"></input>
 				</div>
-				<!-- <table>
-					<tr>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Status</th>
-					</tr>
-					<tr>
-						<td>TestStudent1</td>
-						<td>Male</td>
-						<td>1234 5678901223</td>
-						<td>TestStudent1@web.de</td>
-						<td>active</td>
-					</tr>
-					<tr>
-						<td>TestStudent2</td>
-						<td>Male</td>
-						<td>46789579579778</td>
-						<td>TestStudent2@web.de</td>
-						<td>active</td>
-					</tr>
-				</table> -->
-				<form>  
-					<div class="container">  
-						 <!-- <h1> Student Registeration Form</h1>  -->
-					<hr>  
-					<label> Employee ID: </label>   
-				  <input type="text" name="Employee ID " placeholder= "Employee ID" size="15" required />   
-				  <label> Instructor Name: </label>   
-				  <input type="text" name="middlename" placeholder="Student Name" size="15" required />   
-				  <label for="Birthday"> Date of Birth : </label><input id="Date of Birthday" type="date" value="2011-01-13" size="15" required />  
-				 
-				
-								 <!-- <label>   
-								Gender :  
-								</label><br>  
-								<input type="radio" value="Female" name="gender" checked > Female   
-								<input type="radio" value="Male" name="gender"> Male   
-								<input type="radio" value="Other" name="gender"> Other   -->
-				
-							
-									<!-- 	
-								<div class="toggle-buttons"> -->
-									  
-											<!-- 	</label>
-									<input type="radio" id="b1" name="group-b"/>
-									<label for="b1">Female</label>
-									<input type="radio" id="b2" name="group-b"/>
-									<label for="b2">Male</label>
-									<input type="radio" id="b3" name="group-b" />
-									<label for="b3">Other</label> -->
-									<label>   
-											Gender : 
-											</label>
-									<div class="toggle-buttons">
-											<input type="radio" id="b1" name="group-b"  />
-											<label for="b1">Female</label>
-											<input type="radio" id="b2" name="group-b"/>
-											<label for="b2">Male</label>
-											<input type="radio" id="b3" name="group-b" />
-											<label for="b3">Other</label>
-										</div>
+				<form class="form-style-7">
+					<ul>
+						<li>
+							<label>Employee ID</label>
+							<input type="text" name="Employee ID " placeholder="Employee ID" size="15" required />
+						</li>
+						<li>
+							<label>Instructor Name</label>
+							<input type="text" name="middlename" placeholder="Student Name" size="15" required />
+						</li>
+						<li>
+							<label for="Birthday"> Date of Birth </label>
+							<input id="Date of Birthday" type="date" value="2011-01-13" size="15" required />
+						</li>
+						<li>
+							<label>Gender</label>
+							<div class="togglebuttons">
+								<input type="radio" id="b1" name="group-b" />
+								<label for="b1">Female</label>
+								<input type="radio" id="b2" name="group-b" />
+								<label for="b2">Male</label>
+								<input type="radio" id="b3" name="group-b" />
+								<label for="b3">Other</label>
+							</div>
+						</li>
+						<li>
+							<label for="NationalID">National ID</label>
+							<input type="text" id="NationalID" name="NationalID" placeholder="National ID" size="15"
+								required />
+						</li>
+						<li>
+							<label>Phone Number</label>
+							<input type="text" name="phoneNumber" placeholder="Phone Number" size="15" required />
+						</li>
+						<li>
+							<label>Email</label>
+							<input type="email" name="Email" placeholder="Email" size="15" required />
+						</li>
+						<li>
+							<label>National Examinar</label>
+							<div class="togglebuttons">
+								<input type="radio" id="c1" name="group-c" />
+								<label for="c1">Yes</label>
+								<input type="radio" id="c2" name="group-c" />
+								<label for="c2">No</label>
+							</div>
+						</li>
+						<li>
+							<label>Education Background</label>
+							<input type="text" name="Education Background" placeholder="Education Background" size="15"
+								required />
+						</li>
+						<li>
+							<label>Pedagogical Training</label>
+							<input type="text" name="Pedagogical Training" placeholder="Pedagogical Training" size="15"
+								required />
+						</li>
+					</ul>
+				</form>
 
-								<label> National ID:  </label>
-								<input type="text" name="National ID" placeholder= "National ID" size="15" required />   
-								<label> Phone Number:  </label>   
-								<input type="text" name="phone number" placeholder= "Phone Number" size="15" required />   
-								<label> Email:  </label>   
-								<input type="text" name="Email" placeholder= "Email" size="15" required />   
-								<label>   </label>   
-								<label>   
-										National Examinar : 
-										</label>
-								<div class="toggle-buttons">
-										<input type="radio" id="b1" name="group-b"/>
-										<label for="b1">Yes</label>
-										<input type="radio" id="b2" name="group-b"/>
-										<label for="b2">No</label>
-									</div>
-				 
-						  <label> Education Background: </label>   
-						  <input type="text" name="Education Background" placeholder= "Education Background" size="15" required />  
-						  <label> Pedagogical Training: </label>   
-						  <input type="text" name="Pedagogical Training" placeholder= "Pedagogical Training" size="15" required />  
-						
-
-						</div>  
-				  </form>   
-				  
 
 
 
@@ -156,44 +126,6 @@
 		<section id="footer">
 			<div class="container">
 				<div class="col-6 col-12-medium">
-					<section>
-						<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-							mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-							leo nibh, rutrum eu malesuada.</p>
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<ul class="icons">
-									<li class="icon solid fa-home">
-										1234 Somewhere Road<br />
-										Nashville, TN 00000<br />
-										USA
-									</li>
-									<li class="icon solid fa-phone">
-										(000) 000-0000
-									</li>
-									<li class="icon solid fa-envelope">
-										<a href="#">info@untitled.tld</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-small">
-								<ul class="icons">
-									<li class="icon brands fa-twitter">
-										<a href="#">@untitled</a>
-									</li>
-									<li class="icon brands fa-instagram">
-										<a href="#">instagram.com/untitled</a>
-									</li>
-									<li class="icon brands fa-dribbble">
-										<a href="#">dribbble.com/untitled</a>
-									</li>
-									<li class="icon brands fa-facebook-f">
-										<a href="#">facebook.com/untitled</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
 				</div>
 			</div>
 	</div>
