@@ -55,144 +55,118 @@
 				<div class="search">
 					<i class="fas fa-search"></i> <input id="searchInput" type="search"></input>
 				</div>
-				<!-- <table>
-					<tr>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Status</th>
-					</tr>
-					<tr>
-						<td>TestStudent1</td>
-						<td>Male</td>
-						<td>1234 5678901223</td>
-						<td>TestStudent1@web.de</td>
-						<td>active</td>
-					</tr>
-					<tr>
-						<td>TestStudent2</td>
-						<td>Male</td>
-						<td>46789579579778</td>
-						<td>TestStudent2@web.de</td>
-						<td>active</td>
-					</tr>
-				</table> -->
-				<form>  
-					<div class="container">  
-						 <!-- <h1> Student Registeration Form</h1>  -->
-					<hr>  
-					<label> Registration Number: </label>   
-				  <input type="text" name="Registraion Number" placeholder= "Registraion Number" size="15" required />   
-				  <label> Student Name: </label>   
-				  <input type="text" name="middlename" placeholder="Student Name" size="15" required />   
-				  <label for="Birthday"> Date of Birth : </label><input id="Date of Birthday" type="date" value="2011-01-13" size="15" required />  
-				 
-				
-								 <!-- <label>   
-								Gender :  
-								</label><br>  
-								<input type="radio" value="Female" name="gender" checked > Female   
-								<input type="radio" value="Male" name="gender"> Male   
-								<input type="radio" value="Other" name="gender"> Other   -->
-							
-							
-							
-<!-- 								
-								<div class="toggle-buttons"> -->
-									  
-											<!-- 	</label>
-									<input type="radio" id="b1" name="group-b"/>
-									<label for="b1">Female</label>
-									<input type="radio" id="b2" name="group-b"/>
-									<label for="b2">Male</label>
-									<input type="radio" id="b3" name="group-b" />
-									<label for="b3">Other</label> -->
-									<label>   
-											Gender : 
-											</label>
-									<div class="toggle-buttons">
-											<input type="radio" id="b1" name="group-b" />
-											<label for="b1">Female</label>
-											<input type="radio" id="b2" name="group-b"/>
-											<label for="b2">Male</label>
-											<input type="radio" id="b3" name="group-b" />
-											<label for="b3">Other</label>
-										</div>
-
-								<label> National ID:  </label>
-								<input type="text" name="National ID" placeholder= "National ID" size="15" required />   
-								<label> Student Contact:  </label>   
-								<input type="text" name="Student Contact" placeholder= "Student Contact" size="15" required />   
-								<label> Reporting Date:  </label>   
-								<input type="text" name="Reporting Date" placeholder= "Reporting Date" size="15" required />   
-								<label>   </label>   
-								<label>
-					Entry Behavior   
-				  </label>   
-					
-				  <select>  
-				  <option value="Course">KCPE</option>  
-				  <option value="BCA">KCSE</option>  
-				  <option value="BBA">Pre-KCPE</option>  
-				  <option value="B.Tech">Grade 2</option>  
-				  <option value="MBA">Grade 3</option>  
-				  <option value="MCA">Certificate</option>  
-				  <option value="M.Tech">Diploma</option>  
-				  <option value="M.Tech">Degree</option>  
-				  <option value="M.Tech">Pre-KCSE</option>  
-				  </select>  
-				 
-
-				  <label>
-						Mode of Study 
-					  </label>   
-						
-					  <select>  
-					  <option value="Course">Regular</option>  
-					  <option value="BCA">Part-Time</option>  
-					  <option value="BBA">Gap Year</option>  
-					  </select>  
-					  
-
-					  <label>
-							Sponsor
-						  </label>   
-							
-						  <select>  
-						  <option value="Course">Self-Sponsored</option>  
-						  <option value="BCA">Rafiki</option>  
-						  <option value="BBA">Impact</option>  
-						  <option value="BBA">Church</option>  
-						  <option value="BBA">Nyagoko</option>  
-						  <option value="BBA">Ronalo</option>  
-						  <option value="BBA">Mahaya</option>  
-						  <option value="BBA">Guardian</option>  
-						  <option value="BBA">AIHA</option>  
-						  </select>  
-						  
-						  <label> Guardian: </label>   
-						  <input type="text" name="Guardian Name" placeholder= "Guardian Name" size="15" required />  
-						  <label> Guardian Contact: </label>   
-						  <input type="text" name="Guardian Number" placeholder= "Guardian Number" size="15" required />  
-						  <label> Relation to Student: </label>   
-						  <input type="text" name="Relation" placeholder= "Relation" size="15" required />  
-						  <label> Current Residence: </label>   
-						  <input type="text" name="Current Residence" placeholder= "Current Residence" size="15" required />  
-						  <label> Description: </label>   
-						  <input type="text" name="Guardian Name" placeholder= "Guardian Name" size="15" required />  
-						  <label> Comments: </label>   
-						  <input type="text" name="Comments‚"  size="30" required />  
-
-						  <label> Upload Student Photo </label>   
-						  <td><input type="file"/></td>
-
-						</div>  
-				  </form>   
-				  
-
-
-
+				<form class="form-style-7">
+					<ul>
+						<li>
+							<label>Registration Number</label>
+							<input type="text" name="Registraion Number" placeholder="Registraion Number" size="15"
+								required />
+						</li>
+						<li>
+							<label>Student Name</label>
+							<input type="text" name="middlename" placeholder="Student Name" size="15" required />
+						</li>
+						<li>
+							<label for="Birthday">Date of Birth</label>
+							<input id="Date of Birthday" type="date" value="2011-01-13" size="15" required />
+						</li>
+						<li>
+							<label>Gender</label>
+							<div class="togglebuttons">
+								<input type="radio" id="b1" name="group-b" />
+								<label for="b1">Female</label>
+								<input type="radio" id="b2" name="group-b" />
+								<label for="b2">Male</label>
+								<input type="radio" id="b3" name="group-b" />
+								<label for="b3">Other</label>
+							</div>
+						</li>
+						<li>
+							<label for="NationalID">National ID</label>
+							<input type="text" id="NationalID" name="NationalID" placeholder="National ID" size="15"
+								required />
+						</li>
+						<li>
+							<label>Student Contact</label>
+							<input type="text" name="Student Contact" placeholder="Student Contact" size="15"
+								required />
+						</li>
+						<li>
+							<label>Reporting Date</label>
+							<input type="text" name="Reporting Date" placeholder="Reporting Date" size="15" required />
+						</li>
+						<li>
+							<label>Entry Behavior</label>
+							<select>
+								<option value="Course">KCPE</option>
+								<option value="BCA">KCSE</option>
+								<option value="BBA">Pre-KCPE</option>
+								<option value="B.Tech">Grade 2</option>
+								<option value="MBA">Grade 3</option>
+								<option value="MCA">Certificate</option>
+								<option value="M.Tech">Diploma</option>
+								<option value="M.Tech">Degree</option>
+								<option value="M.Tech">Pre-KCSE</option>
+							</select>
+						</li>
+						<li>
+							<label>Mode of Study</label>
+							<select>
+								<option value="Regular">Regular</option>
+								<option value="PartTime">Part-Time</option>
+								<option value="GapYear">Gap Year</option>
+							</select>
+						</li>
+						<li>
+							<label>Sponsor</label>
+							<select>
+								<option value="SelfSponsored">Self-Sponsored</option>
+								<option value="Rafiki">Rafiki</option>
+								<option value="Impact">Impact</option>
+								<option value="Church">Church</option>
+								<option value="Nyagoko">Nyagoko</option>
+								<option value="Ronalo">Ronalo</option>
+								<option value="Mahaya">Mahaya</option>
+								<option value="Guardian">Guardian</option>
+								<option value="AIHA">AIHA</option>
+							</select>
+						</li>
+						<li>
+							<label>Guardian</label>
+							<input type="text" name="Guardian Name" placeholder="Guardian Name" size="15" required />
+						</li>
+						<li>
+							<label>Guardian Contact</label>
+							<input type="text" name="Guardian Number" placeholder="Guardian Number" size="15"
+								required />
+						</li>
+						<li>
+							<label>Relation to Student</label>
+							<input type="text" name="Relation" placeholder="Relation" size="15" required />
+						</li>
+						<li>
+							<label>Current Residence</label>
+							<input type="text" name="Current Residence" placeholder="Current Residence" size="15"
+								required />
+						</li>
+						<li>
+							<label>Description</label>
+							<input type="text" name="Guardian Name" placeholder="Guardian Name" size="15" required />
+						</li>
+						<li>
+							<label>Comments</label>
+							<input type="text" name="Comments‚" size="30" required />
+						</li>
+						<li>
+							<label>Upload Student Photo</label>
+							<td><input type="file" /></td>
+						</li>
+						<li>
+							<label>Comments</label>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</li>
+					</ul>
+				</form>
 
 			</div>
 		</section>
@@ -201,44 +175,7 @@
 		<section id="footer">
 			<div class="container">
 				<div class="col-6 col-12-medium">
-					<section>
-						<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-							mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-							leo nibh, rutrum eu malesuada.</p>
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<ul class="icons">
-									<li class="icon solid fa-home">
-										1234 Somewhere Road<br />
-										Nashville, TN 00000<br />
-										USA
-									</li>
-									<li class="icon solid fa-phone">
-										(000) 000-0000
-									</li>
-									<li class="icon solid fa-envelope">
-										<a href="#">info@untitled.tld</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-small">
-								<ul class="icons">
-									<li class="icon brands fa-twitter">
-										<a href="#">@untitled</a>
-									</li>
-									<li class="icon brands fa-instagram">
-										<a href="#">instagram.com/untitled</a>
-									</li>
-									<li class="icon brands fa-dribbble">
-										<a href="#">dribbble.com/untitled</a>
-									</li>
-									<li class="icon brands fa-facebook-f">
-										<a href="#">facebook.com/untitled</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+					
 				</div>
 			</div>
 	</div>

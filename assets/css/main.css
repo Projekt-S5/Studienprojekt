@@ -152,6 +152,46 @@ input, select, textarea {
 	color:#fff!important;
 	transition:0.2s all ease-in-out!important;
 }
+
+/* Akkordeon */
+
+#akkordeonS:not(:target) .inhaltS {
+	display: none;
+}
+
+#akkordeonS:target .inhaltS {
+	display: block;
+}
+
+#akkordeonS:target .showS {
+	display: none;
+}
+
+#akkordeonS:not(:target) .hideS {
+	display: none;
+}
+
+.inhaltS {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	padding: 20px 20px 1px;
+	margin: 0px 0px 10px;
+}
+
+.showS, .hideS {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right: 95%;
+	background: #ed786a;
+	box-shadow:none!important;
+	color:#fff;
+	font-weight:bold;
+}
+.showS:hover, .hidS:hover {
+	background: #ed776aa9;
+	color:#fff!important;
+	transition:0.2s all ease-in-out!important;
+}
 	
 
 /* Basic */
@@ -1624,6 +1664,10 @@ input, select, textarea {
 	margin: 2em;
 }
 
+.Comments {
+	display: grid;
+}
+
 /* Formular New */
 
 .form-style-7{
@@ -1662,7 +1706,8 @@ input, select, textarea {
 	background: #FFFFFF;
 	height: 30px;
 	padding: 2px 5px 2px 5px;
-	color: #B9B9B9;
+	color: #888;
+	font-weight: bold;
 	font-size: 20px;
 	overflow: hidden;
 	font-family: 'Source Sans Pro';
