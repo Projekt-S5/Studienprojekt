@@ -50,38 +50,50 @@
 		</section>
 
 		<!-- Main -->
+
+		<!-- Main  --> 
 		<section id="main">
-			<div class="container">
-				<div class="search">
-					<i class="fas fa-search"></i> <input id="searchInput" type="search"></input>
+				<div class="container">
+					<div class="search">
+						<i class="fas fa-search"></i> <input id="searchInput" type="search"/>
+					</div>
+					<table class="Course">
+						<tr>
+							<td><label for="CourseID">Student ID</label></td>
+							<td><input id="CourseID" type="text" /></td>
+						</tr>
+						<tr>
+							<td><label for="CourseName">Student Name</label></td>
+							<td><input id="CourseName" type="text" /></td>
+						</tr>
+						<tr>
+							<td><label for="CourseCode">Student Code</label></td>
+							<td><input id="CourseCode" type="text" /></td>
+						</tr>
+					</table>
+	
+					<div id="akkordeon">
+						<a class="show" href="#akkordeon">Subjects</a>
+						<a class="hide" href="#">Subjects</a>
+						<div class="inhalt">
+							<input type="checkbox" id="TT" name="TradeTheory"/><label for="TT">Trade Theory</label>				
+							<input type="checkbox" id="TP" name="TradePractice"/><label for="TP">Trade Practice</label>					
+							<input type="checkbox" id="IT" name="ICTTheory"/><label for="IT">ICT Theory</label>				
+							<input type="checkbox" id="IP" name="ICTPractice"/><label for="IP">ICT Practice</label>					
+							<input type="checkbox" id="ES" name="Entreprenuership"/><label for="ES">Entreprenuership</label>			
+							<input type="checkbox" id="CS" name="CommunicationSkills"/><label for="CS">Communication Skills</label>
+							<input type="checkbox" id="LS" name="LifeSkills"/><label for="LS">Life Skills</label>
+							<input type="checkbox" id="TD" name="TechnicalDrawing"/><label for="TD">Technical Drawing</label>
+							<input type="checkbox" id="CSWR" name="CommunicationSkills/WorkReadiness"/><label for="CSWR">Communication Skills / Work readiness</label>
+							<input type="checkbox" id="FD" name="FashionDrafting"/><label for="FD">Fashion Drafting</label>
+							<input type="checkbox" id="MW" name="MicrosoftWord"/><label for="MW">Microsoft Word</label>
+							<input type="checkbox" id="ME" name="MicrosoftExcel"/><label for="ME">Microsoft Excel</label>
+						</div>
+					</div>
+	
 				</div>
-				<!-- <button type="button" onclick="<a href="students_new.html"></a>New Student</button> -->
-				<a href="students_new.html" class="newButton">New Student</a>
-				<table class="table">
-					<tr>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Status</th>
-					</tr>
-					<tr>
-						<td><a href="students_details1.html">TestStudent1</a></td>
-						<td><a href="students_details1.html">Male</a></td>
-						<td><a href="students_details1.html">1234 5678901223</a></td>
-						<td><a href="students_details1.html">TestStudent1@web.de</a></td>
-						<td><a href="students_details1.html">active</a></td>
-					</tr>
-					<tr>
-						<td><a href="students_details1.html">TestStudent2</a></td>
-						<td><a href="students_details1.html">Male</a></td>
-						<td><a href="students_details1.html">46789579579778</a></td>
-						<td><a href="students_details1.html">TestStudent2@web.de</a></td>
-						<td><a href="students_details1.html">active</a></td>
-					</tr>
-				</table>
-			</div>
-		</section>
+			</section>
+	
 
 		<!-- Footer -->
 		<section id="footer">
