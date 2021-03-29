@@ -52,12 +52,11 @@
 		<!-- Main -->
 		<section id="main">
 			<div class="container">
-				<a href="instructor_details1.html" class="newButton">edit Instructor</a>
-				<table>
+				<a href="instructors_edit1.html" class="newButton">edit Instructor</a>
+				<table class="table">
 					<tr>
 						<td class="detailsTD">
-							<!-- CommentBlock?? -->
-							<table>
+							<table class="table">
 								<tr>
 									<td>
 										<label>Employee ID</label>
@@ -78,8 +77,7 @@
 										<label for="Birthday"> Date of Birth </label>
 									</td>
 									<td>
-										<input id="Date of Birthday" type="datetime" value="01.01.1990" size="15"
-											required />
+										<p class="Test">01.01.1990</p>
 									</td>
 								</tr>
 								<tr>
@@ -87,12 +85,7 @@
 										<label>Gender</label>
 									</td>
 									<td>
-										<div class="togglebuttons">
-											<input type="radio" id="b1" name="group-b" />
-											<label for="b1">Female</label>
-											<input type="radio" id="b2" name="group-b" checked />
-											<label for="b2">Male</label>
-										</div>
+										<p class="Test">Male</p>
 									</td>
 								</tr>
 								<tr>
@@ -103,10 +96,6 @@
 										<p class="Test">111111111111</p>
 									</td>
 								</tr>
-							</table>
-						</td>
-						<td class="detailsTD">
-							<table>
 								<tr>
 									<td>
 										<label>Phone Number</label>
@@ -123,17 +112,16 @@
 										<p class="Test">Test1@web.de</p>
 									</td>
 								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="table">
 								<tr>
 									<td>
 										<label>National Examinar</label>
 									</td>
 									<td>
-										<div class="togglebuttons">
-											<input type="radio" id="c1" name="group-c" />
-											<label for="c1">Yes</label>
-											<input type="radio" id="c2" name="group-c" checked />
-											<label for="c2">No</label>
-										</div>
+										<p class="Test">No</p>
 									</td>
 								</tr>
 								<tr>
@@ -152,23 +140,26 @@
 										<p class="Test">none</p>
 									</td>
 								</tr>
+								<tr>
+									<td>
+										<label>Comments</label>
+									</td>
+									<td>
+										<textarea name="comments" rows="2" style="width: 100%;"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="status" style="padding-right: 1em; ">Status</label>
+									</td>
+									<td>
+										<p class="Test">active</p>
+									</td>
+								</tr>
 							</table>
-						</td>
-						<td class="Comments">
-							<label>Comments</label>
-							<textarea name="" id="" cols="25" rows="5"></textarea>
 						</td>
 					</tr>
 				</table>
-
-				<div class="Status">
-					<label for="status" style="padding-right: 1em; ">Status</label>
-					<select>
-						<option value="active" selected>active</option>
-						<option value="inactive">inactive</option>
-						<option value="archived">archived</option>
-					</select>
-				</div>
 
 				<div id="akkordeonI">
 					<a class="showI" href="#akkordeonI">CourseTeachingHistory</a>

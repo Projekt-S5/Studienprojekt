@@ -24,13 +24,13 @@
 				<nav id="nav">
 					<ul>
 						<li>
-							<a href="instructors.html"><span>Instructor</span></a>
+							<a class="active" href="instructors.html"><span>Instructor</span></a>
 							<ul>
 								<li><a href="#">archived</a></li>
 							</ul>
 						</li>
 						<li>
-							<a class="active" href="students.html"><span>Student</span></a>
+							<a href="students.html"><span>Student</span></a>
 							<ul>
 								<li><a href="#">active</a></li>
 								<li><a href="#">inactive</a></li>
@@ -50,28 +50,27 @@
 		</section>
 
 		<!-- Main -->
-
-		<!-- Main  -->
 		<section id="main">
 			<div class="container">
 				<form action="">
 					<table class="table">
 						<tr>
 							<td class="detailsTD">
+								<!-- CommentBlock?? -->
 								<table class="table">
 									<tr>
 										<td>
-											<label>Registration Number</label>
+											<label>Employee ID</label>
 										</td>
 										<td>
-											<input type="text" value="RTRC/ICT/112/2019">
+											<input type="text" value="POOO">
 										</td>
 									<tr>
 										<td>
-											<label>Student Name</label>
+											<label>Instructor Name</label>
 										</td>
 										<td>
-											<input type="text" value="TestStudent1">
+											<input type="text" value="Test1">
 										</td>
 									</tr>
 									<tr>
@@ -79,7 +78,7 @@
 											<label for="Birthday"> Date of Birth </label>
 										</td>
 										<td>
-											<input id="Date of Birthday" type="datetime" value="2001-01-18" size="15"
+											<input id="Date of Birthday" type="datetime" value="01.01.1990" size="15"
 												required />
 										</td>
 									</tr>
@@ -89,12 +88,10 @@
 										</td>
 										<td>
 											<div class="togglebuttons">
-												<input type="radio" id="b1" name="group-b" checked />
+												<input type="radio" id="b1" name="group-b" />
 												<label for="b1">Female</label>
-												<input type="radio" id="b2" name="group-b" />
+												<input type="radio" id="b2" name="group-b" checked />
 												<label for="b2">Male</label>
-												<input type="radio" id="b3" name="group-b" />
-												<label for="b3">Other</label>
 											</div>
 										</td>
 									</tr>
@@ -103,12 +100,12 @@
 											<label for="NationalID">National ID</label>
 										</td>
 										<td>
-											<input type="text" value="N/A">
+											<input type="text" value="111111111111">
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<label>Student Phone Number</label> <!-- Student Contact -->
+											<label>Phone Number</label>
 										</td>
 										<td>
 											<input type="text" value="1234 5678901223">
@@ -116,59 +113,10 @@
 									</tr>
 									<tr>
 										<td>
-											<label for="ReportingDate">Reporting Date</label>
+											<label>Email</label>
 										</td>
 										<td>
-											<input id="ReportingDate" type="datetime" value="2019-06-17" size="15"
-												required />
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Entry Behavior</label>
-										</td>
-										<td>
-											<select>
-												<option value="KCPE">KCPE</option>
-												<option value="KCSE" selected>KCSE</option>
-												<option value="Pre-KCPE">Pre-KCPE</option>
-												<option value="Grade2">Grade 2</option>
-												<option value="Grade3">Grade 3</option>
-												<option value="Certificate">Certificate</option>
-												<option value="Diploma">Diploma</option>
-												<option value="Degree">Degree</option>
-												<option value="Pre-KCSE">Pre-KCSE</option>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Mode of Study</label>
-										</td>
-										<td>
-											<select>
-												<option value="Regular" selected>Regular</option>
-												<option value="PartTime">Part-Time</option>
-												<option value="GapYear">Gap Year</option>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Sponsor</label>
-										</td>
-										<td>
-											<select>
-												<option value="SelfSponsored">Self-Sponsored</option>
-												<option value="Rafiki">Rafiki</option>
-												<option value="Impact">Impact</option>
-												<option value="Church">Church</option>
-												<option value="Nyagoko">Nyagoko</option>
-												<option value="Ronalo">Ronalo</option>
-												<option value="Mahaya">Mahaya</option>
-												<option value="Guardian">Guardian</option>
-												<option value="AIHA">AIHA</option>
-											</select>
+											<input type="text" value="Test1@web.de">
 										</td>
 									</tr>
 								</table>
@@ -177,42 +125,31 @@
 								<table class="table">
 									<tr>
 										<td>
-											<label>Guardian Name</label>
+											<label>National Examinar</label>
 										</td>
 										<td>
-											<input type="text" value="Emily Nereah">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Guardian Phone Number</label>
-										</td>
-										<td>
-											<input type="text" value="25423645375475">
+											<div class="togglebuttons">
+												<input type="radio" id="c1" name="group-c" />
+												<label for="c1">Yes</label>
+												<input type="radio" id="c2" name="group-c" checked />
+												<label for="c2">No</label>
+											</div>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<label>Relation to Student</label>
+											<label>Education Background</label>
 										</td>
 										<td>
-											<input type="text" value="Mother">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Current Residence</label>
-										</td>
-										<td>
-											<input type="text" value="Odede">
+											<input type="text" value="none">
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<label>Description</label>
+											<label>Pedagogical Training</label>
 										</td>
 										<td>
-											<input type="text" value="Day Scholar">
+											<input type="text" value="none">
 										</td>
 									</tr>
 									<tr>
@@ -220,7 +157,7 @@
 											<label>Comments</label>
 										</td>
 										<td>
-											<textarea name="comments" rows="2" style="width: 100%;"></textarea>
+											<textarea name="comments" style="width: 100%;"></textarea>
 										</td>
 									</tr>
 									<tr>
@@ -236,50 +173,47 @@
 										</td>
 									</tr>
 								</table>
-							</td>
 						</tr>
 					</table>
-
-
-					<div class="Status">
-
-					</div>
-
-					<div id="akkordeonS">
-						<a class="showS" href="#akkordeonS">Courses</a>
-						<a class="hideS" href="#">Courses</a>
-						<div class="inhaltS">
-							<table class="table">
-								<tr>
-									<th>Course ID</th>
-									<th>Name</th>
-									<th>Comments</th>
-								</tr>
-								<tr>
-									<td>
-										<p>RTRC/PLB</p>
-									</td>
-									<td>
-										<p>Plumping & General Fitting</p>
-									</td>
-									<td>
-										<p> </p>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
+					<input type="submit" name="submit">
 				</form>
+
+				<div id="akkordeonI">
+					<a class="showI" href="#akkordeonI">CourseTeachingHistory</a>
+					<a class="hideI" href="#">CourseTeachingHistory</a>
+					<div class="inhaltI">
+						<table class="table">
+							<tr>
+								<th>Course ID</th>
+								<th>Name</th>
+								<th>Comments</th>
+							</tr>
+							<tr>
+								<td>
+									<p>RTRC/PLB</p>
+								</td>
+								<td>
+									<p>Plumping & General Fitting</p>
+								</td>
+								<td>
+									<p> </p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+
+
+
 
 			</div>
 		</section>
-
 
 		<!-- Footer -->
 		<section id="footer">
 			<div class="container">
 				<div class="col-6 col-12-medium">
-
 				</div>
 			</div>
 	</div>

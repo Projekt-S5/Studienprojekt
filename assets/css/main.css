@@ -562,7 +562,7 @@ input, select, textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
-	form input[type="date"],
+	form input[type="datetime"],
 	form select,
 	form textarea {
 		-moz-transition: background-color 0.25s ease-in-out;
@@ -1044,7 +1044,17 @@ input, select, textarea {
 .Test {
 	background-color: #ccc;
 	margin-bottom: 0%;
-	padding-bottom: 0%;
+	padding-left: 4%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border-radius: 0.25em;
+}
+
+.Test1 {
+	background-color: #ccc;
+	margin-bottom: 0%;
+	padding: 0.25em;
+	border-radius: 0.25em;
 }
 
 	#main {

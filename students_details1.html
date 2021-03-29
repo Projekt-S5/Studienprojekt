@@ -55,10 +55,10 @@
 		<section id="main">
 			<div class="container">
 				<a href="students_edit1.html" class="newButton">edit Student</a>
-				<table>
+				<table class="table">
 					<tr>
 						<td class="detailsTD">
-							<table>
+							<table class="table">
 								<tr>
 									<td>
 										<label>Registration Number</label>
@@ -79,8 +79,7 @@
 										<label for="Birthday"> Date of Birth </label>
 									</td>
 									<td>
-										<input id="Date of Birthday" type="datetime" value="18.01.2018" size="15"
-											required />
+										<p class="Test">18.01.2018</p>
 									</td>
 								</tr>
 								<tr>
@@ -88,12 +87,7 @@
 										<label>Gender</label>
 									</td>
 									<td>
-										<div class="togglebuttons">
-											<input type="radio" id="b1" name="group-b" checked/>
-											<label for="b1">Female</label>
-											<input type="radio" id="b2" name="group-b"/>
-											<label for="b2">Male</label>
-										</div>
+										<p class="Test">Female</p>
 									</td>
 								</tr>
 								<tr>
@@ -117,7 +111,7 @@
 										<label for="ReportingDate">Reporting Date</label>
 									</td>
 									<td>
-										<input id="ReportingDate" type="datetime" value="17.06.2019" size="15" required />
+										<p class="Test">17.06.2019</p>
 									</td>
 								</tr>
 								<tr>
@@ -125,17 +119,7 @@
 										<label>Entry Behavior</label>
 									</td>
 									<td>
-										<select>
-											<option value="KCPE">KCPE</option>
-											<option value="KCSE" selected>KCSE</option>
-											<option value="Pre-KCPE">Pre-KCPE</option>
-											<option value="Grade2">Grade 2</option>
-											<option value="Grade3">Grade 3</option>
-											<option value="Certificate">Certificate</option>
-											<option value="Diploma">Diploma</option>
-											<option value="Degree">Degree</option>
-											<option value="Pre-KCSE">Pre-KCSE</option>
-										</select>
+										<p class="Test">KCSE</p>
 									</td>
 								</tr>
 								<tr>
@@ -143,11 +127,7 @@
 										<label>Mode of Study</label>
 									</td>
 									<td>
-										<select>
-											<option value="Regular" selected>Regular</option>
-											<option value="PartTime">Part-Time</option>
-											<option value="GapYear">Gap Year</option>
-										</select>
+										<p class="Test">Regular</p>
 									</td>
 								</tr>
 								<tr>
@@ -155,23 +135,13 @@
 										<label>Sponsor</label>
 									</td>
 									<td>
-										<select>
-											<option value="SelfSponsored">Self-Sponsored</option>
-											<option value="Rafiki">Rafiki</option>
-											<option value="Impact">Impact</option>
-											<option value="Church">Church</option>
-											<option value="Nyagoko">Nyagoko</option>
-											<option value="Ronalo">Ronalo</option>
-											<option value="Mahaya">Mahaya</option>
-											<option value="Guardian">Guardian</option>
-											<option value="AIHA">AIHA</option>
-										</select>
+										<p class="Test">Self-Sponsored</p>
 									</td>
 								</tr>
 							</table>
 						</td>
 						<td>
-							<table>
+							<table class="table">
 								<tr>
 									<td>
 										<label>Guardian Name</label>
@@ -217,22 +187,21 @@
 										<label>Comments</label>
 									</td>
 									<td>
-										<textarea name="comments" id="" cols="30" rows="8"></textarea>
+										<textarea name="comments" rows="2" style="width: 100%;"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Status</label>
+									</td>
+									<td>
+										<p class="Test1">active</p>
 									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 				</table>
-
-				<div class="Status">
-					<label for="status" style="padding-right: 1em; ">Status</label>
-					<select>
-						<option value="active" selected>active</option>
-						<option value="inactive">inactive</option>
-						<option value="archived">archived</option>
-					</select>
-				</div>
 
 				<div id="akkordeonS">
 					<a class="showS" href="#akkordeonS">Courses</a>
@@ -267,7 +236,7 @@
 		<section id="footer">
 			<div class="container">
 				<div class="col-6 col-12-medium">
-					
+
 				</div>
 			</div>
 	</div>
