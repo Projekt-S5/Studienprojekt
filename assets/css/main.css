@@ -555,7 +555,6 @@ input, select, textarea {
 
 	form label {
 		font-weight: 60;
-		text-transform: uppercase;
 		color: #888;
 		margin: 0 0 0.5em 0;
 	}
@@ -563,6 +562,7 @@ input, select, textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
+	form input[type="date"],
 	form select,
 	form textarea {
 		-moz-transition: background-color 0.25s ease-in-out;
@@ -570,14 +570,13 @@ input, select, textarea {
 		-ms-transition: background-color 0.25s ease-in-out;
 		transition: background-color 0.25s ease-in-out;
 		-webkit-appearance: none;
-		display: block;
 		border: 0;
 		background: #e8e8e8;
 		width: 100%;
 		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
 		line-height: 1.25em;
-		padding: 0.75em 1em 0.75em 1em;
+		padding: 0.5em 0.75em 0.5em 0.75em;
 	}
 
 		form input[type="text"]:focus,
