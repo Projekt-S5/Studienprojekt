@@ -1718,7 +1718,7 @@ input, select, textarea {
 .form-style-7 input[type="email"],
 .form-style-7 input[type="number"],
 .form-style-7 input[type="search"],
-.form-style-7 input[type="time"],
+.form-style-7 input[type="datetime"],
 .form-style-7 input[type="url"],
 .form-style-7 input[type="password"],
 .form-style-7 textarea,
@@ -1745,7 +1745,7 @@ input, select, textarea {
 	font-family: 'Source Sans Pro';
 }
 
-.form-style-7 input[type="date"]
+.form-style-7 input[type="datetime"]
 {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
