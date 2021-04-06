@@ -75,12 +75,16 @@ input, select, textarea {
 
 /* Akkordeon */
 
+#akkordeon {
+	padding-bottom: 1em;
+}
+
 #akkordeon:not(:target) .inhalt {
 	display: none;
 }
 
 #akkordeon:target .inhalt {
-	display: block;
+	display: grid;
 }
 
 #akkordeon:target .show {
@@ -114,6 +118,10 @@ input, select, textarea {
 }
 
 /* Akkordeon Instruktor*/
+
+#akkordeonI {
+	padding-bottom: 1em;
+}
 
 #akkordeonI:not(:target) .inhaltI {
 	display: none;
@@ -154,6 +162,10 @@ input, select, textarea {
 }
 
 /* Akkordeon */
+
+#akkordeonS {
+	padding-bottom: 1em;
+}
 
 #akkordeonS:not(:target) .inhaltS {
 	display: none;
