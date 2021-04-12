@@ -1689,6 +1689,11 @@ input, select, textarea {
 	display: grid;
 }
 
+detailsBox {
+	display: flex;
+	
+}
+
 /* Formular New */
 
 .form-style-7{
