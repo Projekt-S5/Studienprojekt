@@ -625,6 +625,10 @@ input, select, textarea {
 	}
 
 /* Table */
+	.test1 {
+		display: inline-block;
+	}
+
 
 	.table {
 		width: 100%;
