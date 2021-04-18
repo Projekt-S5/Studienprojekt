@@ -626,9 +626,10 @@ input, select, textarea {
 
 /* Table */
 	.test1 {
-		display: inline-block;
+		display: inline-flex;
+		margin: 1em;
+		
 	}
-
 
 	.table {
 		width: 100%;
