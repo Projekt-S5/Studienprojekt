@@ -10,6 +10,7 @@
     <title>Strongly Typed by HTML5 UP</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -53,50 +54,95 @@
         <section id="main">
             <div class="container">
                 <form action="">
-                <table class="Course">
-                    <tr>
-                        <td><label for="CourseID">Course ID</label></td>
-                        <td><input type="text" value="RTRC/GM"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="CourseName">Course Name</label></td>
-                        <td><input type="text" value="Fashion Design & Garment"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="CourseCode">Course Code</label></td>
-                        <td><input id="CourseCode" type="text" value="GM" /></td>
-                    </tr>
-                </table>
-
-                <div id="akkordeon">
-                    <a class="show" href="#akkordeon">Subjects</a>
-                    <a class="hide" href="#">Subjects</a>
-                    <div class="inhalt">
-                        <input type="checkbox" id="TT" name="TradeTheory" checked /><label for="TT">Trade Theory</label>
-                        <input type="checkbox" id="TP" name="TradePractice" checked /><label for="TP">Trade
-                            Practice</label>
-                        <input type="checkbox" id="IP" name="ICTPractice" checked /><label for="IP">ICT Practice</label>
-                        <input type="checkbox" id="ES" name="Entreprenuership" checked /><label
-                            for="ES">Entreprenuership</label>
-                        <input type="checkbox" id="CS" name="CommunicationSkills" checked /><label
-                            for="CS">Communication Skills</label>
-                        <input type="checkbox" id="IT" name="ICTTheory" /><label for="IT">ICT Theory</label>
-                        <input type="checkbox" id="LS" name="LifeSkills" /><label for="LS">Life Skills</label>
-                        <input type="checkbox" id="TD" name="TechnicalDrawing" /><label for="TD">Technical
-                            Drawing</label>
-                        <input type="checkbox" id="CSWR" name="CommunicationSkills/WorkReadiness" /><label
-                            for="CSWR">Communication Skills / Work readiness</label>
-                        <input type="checkbox" id="FD" name="FashionDrafting" /><label for="FD">Fashion
-                            Drafting</label>
-                        <input type="checkbox" id="MW" name="MicrosoftWord" /><label for="MW">Microsoft Word</label>
-                        <input type="checkbox" id="ME" name="MicrosoftExcel" /><label for="ME">Microsoft
-                            Excel</label>
+                    <div class="col-md-6 col-sm-6" style="margin-top: 2em;">
+                        <div class="row g-3">
+                            <div class="form-style-7 col-sm-12 col-md-12 col-lg-12" style="padding: 0%; margin: 0%;">
+                                <ul>
+                                    <li class="col-sm-12 col-md-6">
+                                        <label for="CourseID">Course ID</label>
+                                        <input type="text" value="RTRC/GM">
+                                    </li>
+                                    <li class="col-sm-12 col-md-6">
+                                        <label for="CourseName">Course Name</label>
+                                        <input type="text" value="Fashion Design & Garment">
+                                    </li>
+                                    <li class="col-sm-12 col-md-6">
+                                        <label for="CourseCode">Course Code</label>
+                                        <input id="CourseCode" type="text" value="GM" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <input type="submit" name="submit" value="submit">
-                
-            </form>
+                    <div id="akkordeon">
+                        <a class="show" href="#akkordeon">Subjects</a>
+                        <a class="hide" href="#">Subjects</a>
+                        <div class="inhalt col-md-12 col-sm-12">
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0%; margin: 0%;">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="TT" name="TradeTheory" checked /><label
+                                            for="TT">Trade
+                                            Theory</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="TP" name="TradePractice" checked /><label
+                                            for="TP">Trade
+                                            Practice</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="IP" name="ICTPractice" checked /><label for="IP">ICT
+                                            Practice</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="ES" name="Entreprenuership" checked /><label
+                                            for="ES">Entreprenuership</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="CS" name="CommunicationSkills" checked /><label
+                                            for="CS">Communication Skills</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="IT" name="ICTTheory" /><label for="IT">ICT
+                                            Theory</label>
+
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="LS" name="LifeSkills" /><label for="LS">Life
+                                            Skills</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="TD" name="TechnicalDrawing" /><label
+                                            for="TD">Technical
+                                            Drawing</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="CSWR"
+                                            name="CommunicationSkills/WorkReadiness" /><label for="CSWR">Communication
+                                            Skills /
+                                            Work readiness</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="FD" name="FashionDrafting" /><label for="FD">Fashion
+                                            Drafting</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="MW" name="MicrosoftWord" /><label for="MW">Microsoft
+                                            Word</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <input type="checkbox" id="ME" name="MicrosoftExcel" /><label for="ME">Microsoft
+                                            Excel</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" name="submit" value="submit">
+
+                </form>
 
             </div>
         </section>

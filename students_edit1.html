@@ -10,6 +10,7 @@
 	<title>Strongly Typed by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -55,194 +56,137 @@
 		<section id="main">
 			<div class="container">
 				<form action="">
-					<table class="table">
-						<tr>
-							<td class="detailsTD">
-								<table class="table">
-									<tr>
-										<td>
-											<label>Registration Number</label>
-										</td>
-										<td>
-											<input type="text" value="RTRC/ICT/112/2019">
-										</td>
-									<tr>
-										<td>
-											<label>Student Name</label>
-										</td>
-										<td>
-											<input type="text" value="TestStudent1">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="Birthday"> Date of Birth </label>
-										</td>
-										<td>
-											<input id="Date of Birthday" type="datetime" value="18.01.2001" size="15"
+					<div class="col-md-12 col-sm-12">
+						<h2>Student</h2>
+						<div class="row g-3">
+							<div class="form-style-7 col-sm-12 col-md-6 col-lg-6" style="padding: 0%; margin: 0%;">
+								<ul>
+									<li class="col-sm-12 col-md-6">
+										<label> Registration Number</label>
+										<input type="text" value="RTRC/ICT/112/2019">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Student Name</label>
+										<input type="text" value="TestStudent1">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label for="Birthday"> Date of Birth </label>
+										<input id="Date of Birthday" type="datetime" value="18.01.2001" size="15"
 												required />
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Gender</label>
-										</td>
-										<td>
-											<div class="togglebuttons">
-												<input type="radio" id="b1" name="group-b" checked />
-												<label for="b1">Female</label>
-												<input type="radio" id="b2" name="group-b" />
-												<label for="b2">Male</label>
-												<input type="radio" id="b3" name="group-b" />
-												<label for="b3">Other</label>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="NationalID">National ID</label>
-										</td>
-										<td>
-											<input type="text" value="N/A">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Student Phone Number</label> <!-- Student Contact -->
-										</td>
-										<td>
-											<input type="text" value="1234 5678901223">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="ReportingDate">Reporting Date</label>
-										</td>
-										<td>
-											<input id="ReportingDate" type="datetime" value="17.06.2019" size="15"
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Gender</label>
+										<div>
+											<input type="radio" id="b1" name="group-b" checked />
+											<label class="togglebuttons" for="b1">Female</label>
+											<input type="radio" id="b2" name="group-b" />
+											<label class="togglebuttons" for="b2">Male</label>
+											<input type="radio" id="b3" name="group-b" />
+											<label class="togglebuttons" for="b3">Other</label>
+										</div>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label for="NationalID">National ID</label>
+										<input type="text" value="N/A">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Student Phone Number</label>
+										<input type="text" value="1234 5678901223">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Student Current Residence</label>
+										<input type="text" value="Odede">
+									</li>
+								</ul>
+							</div>
+							<div class="form-style-7 col-sm-12 col-md-6 col-lg-6" style="padding: 0%; margin: 0%;">
+								<ul>
+									<li class="col-sm-12 col-md-6">
+										<label for="ReportingDate">Reporting Date</label>
+										<input id="ReportingDate" type="datetime" value="17.06.2019" size="15"
 												required />
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Entry Behavior</label>
-										</td>
-										<td>
-											<select>
-												<option value="KCPE">KCPE</option>
-												<option value="KCSE" selected>KCSE</option>
-												<option value="Pre-KCPE">Pre-KCPE</option>
-												<option value="Grade2">Grade 2</option>
-												<option value="Grade3">Grade 3</option>
-												<option value="Certificate">Certificate</option>
-												<option value="Diploma">Diploma</option>
-												<option value="Degree">Degree</option>
-												<option value="Pre-KCSE">Pre-KCSE</option>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Mode of Study</label>
-										</td>
-										<td>
-											<select>
-												<option value="Regular" selected>Regular</option>
-												<option value="PartTime">Part-Time</option>
-												<option value="GapYear">Gap Year</option>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Sponsor</label>
-										</td>
-										<td>
-											<select>
-												<option value="SelfSponsored">Self-Sponsored</option>
-												<option value="Rafiki">Rafiki</option>
-												<option value="Impact">Impact</option>
-												<option value="Church">Church</option>
-												<option value="Nyagoko">Nyagoko</option>
-												<option value="Ronalo">Ronalo</option>
-												<option value="Mahaya">Mahaya</option>
-												<option value="Guardian">Guardian</option>
-												<option value="AIHA">AIHA</option>
-											</select>
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table class="table">
-									<tr>
-										<td>
-											<label>Guardian Name</label>
-										</td>
-										<td>
-											<input type="text" value="Emily Nereah">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Guardian Phone Number</label>
-										</td>
-										<td>
-											<input type="text" value="25423645375475">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Relation to Student</label>
-										</td>
-										<td>
-											<input type="text" value="Mother">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Current Residence</label>
-										</td>
-										<td>
-											<input type="text" value="Odede">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Description</label>
-										</td>
-										<td>
-											<input type="text" value="Day Scholar">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Comments</label>
-										</td>
-										<td>
-											<textarea name="comments" rows="2" style="width: 100%;"></textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="status" style="padding-right: 1em; ">Status</label>
-										</td>
-										<td>
-											<select>
-												<option value="active" selected>active</option>
-												<option value="inactive">inactive</option>
-												<option value="archived">archived</option>
-											</select>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Entry Behavior</label>
+										<select>
+											<option value="KCPE">KCPE</option>
+											<option value="KCSE" selected>KCSE</option>
+											<option value="Pre-KCPE">Pre-KCPE</option>
+											<option value="Grade2">Grade 2</option>
+											<option value="Grade3">Grade 3</option>
+											<option value="Certificate">Certificate</option>
+											<option value="Diploma">Diploma</option>
+											<option value="Degree">Degree</option>
+											<option value="Pre-KCSE">Pre-KCSE</option>
+										</select>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Mode of Study</label>
+										<select>
+											<option value="Regular" selected>Regular</option>
+											<option value="PartTime">Part-Time</option>
+											<option value="GapYear">Gap Year</option>
+										</select>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Sponsor</label>
+										<select>
+											<option value="SelfSponsored">Self-Sponsored</option>
+											<option value="Rafiki">Rafiki</option>
+											<option value="Impact">Impact</option>
+											<option value="Church">Church</option>
+											<option value="Nyagoko">Nyagoko</option>
+											<option value="Ronalo">Ronalo</option>
+											<option value="Mahaya">Mahaya</option>
+											<option value="Guardian">Guardian</option>
+											<option value="AIHA">AIHA</option>
+										</select>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Description</label>
+										<input type="text" value="Day Scholar">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Comments</label>
+										<textarea name="comments" rows="2" >None</textarea>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Status</label>
+										<select>
+											<option value="active" selected>active</option>
+											<option value="inactive">inactive</option>
+											<option value="archived">archived</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-
-					<div class="Status">
-
+					<div class="col-md-12 col-sm-12">
+						<h2>Guardian</h2>
+						<div class="row g-3">
+							<div class="form-style-7 col-sm-12 col-md-6 col-lg-6" style="padding: 0%; margin: 0%;">
+								<li class="col-sm-12 col-md-6">
+									<label>Guardian Name</label>
+									<input type="text" value="Emily Nereah">
+								</li>
+								<li class="col-sm-12 col-md-6">
+									<label>Guardian Phone Number</label>
+									<input type="text" value="25423645375475">
+								</li>
+							</div>
+							<div class="form-style-7 col-sm-12 col-md-6 col-lg-6" style="padding: 0%; margin: 0%;">
+								<li class="col-sm-12 col-md-6">
+									<label>Relation to Student</label>
+									<input type="text" value="Mother">
+								</li>
+								<li class="col-sm-12 col-md-6">
+									<label>Current Residence</label>
+									<input type="text" value="Odede">
+								</li>
+							</div>
+						</div>
 					</div>
 
 					<div id="akkordeonS">

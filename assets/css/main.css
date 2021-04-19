@@ -603,10 +603,6 @@ input, select, textarea {
 	form input[type="datetime"],
 	form select,
 	form textarea {
-		-moz-transition: background-color 0.25s ease-in-out;
-		-webkit-transition: background-color 0.25s ease-in-out;
-		-ms-transition: background-color 0.25s ease-in-out;
-		transition: background-color 0.25s ease-in-out;
 		-webkit-appearance: none;
 		border: 0;
 		background: #e8e8e8;
@@ -614,7 +610,6 @@ input, select, textarea {
 		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
 		line-height: 1.25em;
-		padding: 0.5em 0.75em 0.5em 0.75em;
 	}
 
 		form input[type="text"]:focus,
@@ -625,9 +620,6 @@ input, select, textarea {
 			background: #f0f0f0;
 		}
 
-	form textarea {
-		min-height: 11em;
-	}
 
 	form ::-webkit-input-placeholder {
 		color: #555 !important;
@@ -1722,7 +1714,6 @@ input, select, textarea {
 }
 
 
-
 /* Formular New */
 
 .form-style-7{
@@ -1769,6 +1760,10 @@ input, select, textarea {
 	font-family: 'Source Sans Pro';
 }
 
+.togglebuttons {
+	margin-bottom: 0px;
+}
+
 .form-style-7 > div{
 	list-style:none;
 	padding:0;
@@ -1782,7 +1777,9 @@ input, select, textarea {
 	border-radius: 3px;
 }
 
-.form-style-7 div > label{
+
+
+.form-style-7 > div > label{
 	display: block;
 	float: left;
 	margin-top: -28px;
@@ -1803,7 +1800,6 @@ input, select, textarea {
 .form-style-7 input[type="search"],
 .form-style-7 input[type="url"],
 .form-style-7 input[type="password"],
-.form-style-7 textarea,
 .form-style-7 select
 {
 	box-sizing: border-box;
@@ -1817,6 +1813,29 @@ input, select, textarea {
 	line-height: 25px;
 	font-size: 16px;
 	padding: 1em;
+	font-family: 'Source Sans Pro';
+}
+.form-style-7 select:after {
+ 	content: "";
+  	top: 14px;
+  	right: 10px;
+  	width: 0;
+  	height: 0;
+  	border: 6px solid transparent;
+  	border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+.form-style-7 textarea {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 28px;
+	font-size: 16px;
+	padding: 0.2em 0em 0em 1em;
 	font-family: 'Source Sans Pro';
 }
 

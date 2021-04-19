@@ -10,6 +10,7 @@
 	<title>Strongly Typed by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -53,20 +54,26 @@
 		<section id="main">
 			<div class="container">
 				<form action="">
-					<table class="Course">
-						<tr>
-							<td><label for="CourseID">Course ID</label></td>
-							<td><input id="CourseID" type="text" /></td>
-						</tr>
-						<tr>
-							<td><label for="CourseName">Course Name</label></td>
-							<td><input id="CourseName" type="text" /></td>
-						</tr>
-						<tr>
-							<td><label for="CourseCode">Course Code</label></td>
-							<td><input id="CourseCode" type="text" /></td>
-						</tr>
-					</table>
+					<div class="col-md-6 col-sm-6" style="margin-top: 2em;">
+                        <div class="row g-3">
+                            <div class="form-style-7 col-sm-12 col-md-12 col-lg-12" style="padding: 0%; margin: 0%;">
+                                <ul>
+                                    <li class="col-sm-12 col-md-6">
+                                        <label for="CourseID">Course ID</label>
+                                        <input type="text">
+                                    </li>
+                                    <li class="col-sm-12 col-md-6">
+                                        <label for="CourseName">Course Name</label>
+                                        <input type="text">
+                                    </li>
+                                    <li class="col-sm-12 col-md-6">
+                                        <label for="CourseCode">Course Code</label>
+                                        <input id="CourseCode" type="text"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
 					<div id="akkordeon">
 						<a class="show" href="#akkordeon">Subjects</a> <!-- sara fragen -->

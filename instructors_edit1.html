@@ -10,6 +10,7 @@
 	<title>Strongly Typed by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -53,133 +54,81 @@
 		<section id="main">
 			<div class="container">
 				<form action="">
-					<table class="table">
-						<tr>
-							<td class="detailsTD">
-								<!-- CommentBlock?? -->
-								<table class="table">
-									<tr>
-										<td>
-											<label>Employee ID</label>
-										</td>
-										<td>
-											<input type="text" value="POOO">
-										</td>
-									<tr>
-										<td>
-											<label>Instructor Name</label>
-										</td>
-										<td>
-											<input type="text" value="Test1">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="Birthday"> Date of Birth </label>
-										</td>
-										<td>
-											<input id="Date of Birthday" type="datetime" value="01.01.1990" size="15"
-												required />
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Gender</label>
-										</td>
-										<td>
-											<div class="togglebuttons">
-												<input type="radio" id="b1" name="group-b" />
-												<label for="b1">Female</label>
-												<input type="radio" id="b2" name="group-b" checked />
-												<label for="b2">Male</label>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="NationalID">National ID</label>
-										</td>
-										<td>
-											<input type="text" value="111111111111">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Phone Number</label>
-										</td>
-										<td>
-											<input type="text" value="1234 5678901223">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Email</label>
-										</td>
-										<td>
-											<input type="text" value="Test1@web.de">
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table class="table">
-									<tr>
-										<td>
-											<label>National Examinar</label>
-										</td>
-										<td>
-											<div class="togglebuttons">
-												<input type="radio" id="c1" name="group-c" />
-												<label for="c1">Yes</label>
-												<input type="radio" id="c2" name="group-c" checked />
-												<label for="c2">No</label>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Education Background</label>
-										</td>
-										<td>
-											<input type="text" value="none">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Pedagogical Training</label>
-										</td>
-										<td>
-											<input type="text" value="none">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label>Comments</label>
-										</td>
-										<td>
-											<textarea name="comments" style="width: 100%;"></textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="status" style="padding-right: 1em; ">Status</label>
-										</td>
-										<td>
-											<select>
-												<option value="active" selected>active</option>
-												<option value="inactive">inactive</option>
-												<option value="archived">archived</option>
-											</select>
-										</td>
-									</tr>
-								</table>
-						</tr>
-					</table>
-
+					<div class="col-md-12 col-sm-12">
+						<div class="row g-3">
+							<div class="form-style-7 col-sm-12 col-md-6 col-lg-6">
+								<ul>
+									<li class="col-sm-12 col-md-6">
+										<label>Employee ID</label>
+										<input type="text" value="POOO">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Instructor Name</label>
+										<input type="text" value="Test1">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label for="Birthday"> Date of Birth </label>
+										<input id="Date of Birthday" type="datetime" value="01.01.1990" size="15"
+											required />
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Gender</label>
+										<div class="togglebuttons">
+											<input type="radio" id="b1" name="group-b" />
+											<label for="b1">Female</label>
+											<input type="radio" id="b2" name="group-b" checked />
+											<label for="b2">Male</label>
+										</div>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label for="NationalID">National ID</label>
+										<input type="text" value="111111111111">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Phone Number</label>
+										<input type="text" value="1234 5678901223">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Email</label>
+										<input type="text" value="Test1@web.de">
+									</li>
+								</ul>
+							</div>
+							<div class="form-style-7 col-sm-12 col-md-6 col-lg-6">
+								<ul>
+									<li class="col-sm-12 col-md-6">
+										<label>National Examinar</label>
+										<div class="togglebuttons">
+											<input type="radio" id="c1" name="group-c" />
+											<label for="c1">Yes</label>
+											<input type="radio" id="c2" name="group-c" checked />
+											<label for="c2">No</label>
+										</div>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Education Background</label>
+										<input type="text" value="none">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Pedagogical Training</label>
+										<input type="text" value="none">
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Comments</label>
+										<p class="Test">None</p>
+									</li>
+									<li class="col-sm-12 col-md-6">
+										<label>Status</label>
+										<p class="Test">active</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
 					<div id="akkordeonI">
-						<a class="showI" href="#akkordeonI">CourseTeachingHistory</a>
-						<a class="hideI" href="#">CourseTeachingHistory</a>
+						<a class="showI" href="#akkordeonI">SubjectTeachingHistory</a>
+						<a class="hideI" href="#">SubjectTeachingHistory</a>
 						<div class="inhaltI">
 							<table class="table">
 								<tr>
