@@ -350,12 +350,24 @@ input, select, textarea {
 				width: 68em;
 			}
 
+			.test2 {
+				display: inline-table;
+				order: 2;
+				padding: 0.5em;
+			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			.container {
 				width: calc(100% - 80px);
+			}
+
+			.test2 {
+				display: inline-flex;
+				order: 2;
+				padding: 0.5em;
 			}
 
 		}
@@ -371,7 +383,20 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.container {
-				width: calc(100% - 40px);
+				/*width: calc(100% - 40px);*/
+			}
+
+			.detailsBox {
+				padding-top: 2em;
+				padding-left: 0;
+				padding-right: 0;
+				margin: 0%;
+			}
+			
+			.test2 {
+				display: inline-flex;
+				width: 100%;
+				margin: 0%;
 			}
 
 		}
@@ -625,12 +650,6 @@ input, select, textarea {
 	}
 
 /* Table */
-	.test1 {
-		display: inline-flex;
-		margin: 1em;
-		
-	}
-
 	.table {
 		width: 100%;
 	}
@@ -1059,12 +1078,14 @@ input, select, textarea {
 /* Main */
 
 .Test {
-	background-color: #ccc;
-	margin-bottom: 0%;
-	padding-left: 4%;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	border-radius: 0.25em;
+	background-color: #e8e8e8;
+	border-color: rgba(0, 0, 0, 0.021);
+	border-width: 1px;
+	border-style: solid;
+	line-height: 25px;
+	padding: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
 }
 
 .Test1 {
@@ -1694,10 +1715,12 @@ input, select, textarea {
 	display: grid;
 }
 
-detailsBox {
-	display: flex;
-	
+.detailsBox {
+	margin: 1em;
+	display: inline-flex;
 }
+
+
 
 /* Formular New */
 
@@ -1752,7 +1775,7 @@ detailsBox {
 .form-style-7 input[type="url"],
 .form-style-7 input[type="password"],
 .form-style-7 textarea,
-.form-style-7 select 
+.form-style-7 select
 {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
