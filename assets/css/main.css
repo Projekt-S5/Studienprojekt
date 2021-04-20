@@ -348,7 +348,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.container {
-				width: 68em;
+				width: calc(100% - 40px);
 			}
 
 			.test2 {
@@ -362,7 +362,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.container {
-				width: calc(100% - 80px);
+				width: calc(100% - 40px);
 			}
 
 			.test2 {
@@ -376,7 +376,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.container {
-				width: calc(100% - 100px);
+				width: calc(100% - 50px);
 			}
 
 		}
@@ -661,19 +661,19 @@ input, select, textarea {
 		table th {
 			text-align: left;
 			font-weight: bold;
-			padding: 0.75em 1em 0.75em 1em;
+			padding: 0.5em 1em 0.5em 1em;
 		}
 
 		table thead {
-			background: #878787;
+			background: #ed786a;
 			color: #fff;
 			font-weight: 400;
 			text-transform: uppercase;
 			border: 0;
-			box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
 			font-size: 0.85em;
-			letter-spacing: 2px;
+			letter-spacing: 1px;
 		}
+
 
 		table tfoot {
 			background: #F0F0F0;
@@ -1094,13 +1094,14 @@ input, select, textarea {
 		padding: 1em;
 	}
 
-	#main > .container > .search {
-		position: absolute;
-		right: 15em;
-		top: 2em;
+	.search {
+		display: inline-flex;
+		margin-bottom: 1em;
+		margin-right: 1em;
 	}
+	
 
-	#main > .container > .newButton {
+	.newButton {
 		text-decoration: none;
 		position: relative;
 		top: 0em;
@@ -1116,8 +1117,8 @@ input, select, textarea {
 		text-align: center;
 		font-size: 0.85em;
 		letter-spacing: 2px;
-		padding: 0.85em 2.75em 0.85em 2.75em;
-		margin: 0em 0em 2em 0em;
+		padding: 0.25em 2em 0.25em 2em;
+		margin: 0em 0.5em 1em 2em;
 	}
 
 
@@ -1712,6 +1713,125 @@ input, select, textarea {
 	display: inline-flex;
 }
 
+@media screen and (max-width: 42em) {
+	#main {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		padding: 0em;
+	}
+
+	.InstructorStudentTable table, tbody, tr {
+		display: block;
+	}
+	.InstructorStudentTable thead {
+		display: none;
+	}
+	.InstructorStudentTable tr:first-child {
+		border-top: 2px solid #fd887a;
+	}
+	.InstructorStudentTable tr {
+		border-bottom: 2px solid #fd887a;
+		padding: 0.5em 0.4em 0.5em;
+	}
+	
+	.InstructorStudentTable td:nth-child(1)::before {
+		content: "Name: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.InstructorStudentTable td:nth-child(2)::before {
+		content: "Gender: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.InstructorStudentTable td:nth-child(3)::before {
+		content: "Phone: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.InstructorStudentTable td:nth-child(4)::before {
+		content: "Email: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.InstructorStudentTable td:nth-child(5)::before {
+		content: "Status: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.InstructorStudentTable tbody th {
+		display: block;
+		font-weight: bold;
+	}
+	.InstructorStudentTable th a {
+		font-weight: normal;
+	}
+	.InstructorStudentTable td {
+		display: inline-block;
+		min-width: 30%;
+		padding: .2em 2em;
+		text-align: left;
+	}
+	.InstructorStudentTable td:nth-child(3) {
+		text-align: left;
+	}
+
+	
+	.courseTable table, tbody, tr {
+		display: block;
+	}
+	.courseTable thead {
+		display: none;
+	}
+	.courseTable tr:first-child {
+		border-top: 2px solid #fd887a;
+	}
+	.courseTable tr {
+		border-bottom: 2px solid #fd887a;
+		padding: 1em 0em 1em 0em;
+	}
+	
+	.courseTable td:nth-child(1)::before {
+		content: "ID: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.courseTable td:nth-child(2)::before {
+		content: "Name: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.courseTable td:nth-child(3)::before {
+		content: "Subjects: ";
+		font-weight: bolder;
+		color: #fd887a;
+	}
+	.courseTable tbody th {
+		display: block;
+		font-weight: bold;
+	}
+	.courseTable th a {
+		font-weight: normal;
+	}
+	.courseTable td {
+		display: inline-block;
+		min-width: 30%;
+		padding: .2em 2em;
+		text-align: left;
+	}
+	.courseTable td:nth-child(3) {
+		text-align: left;
+	}
+}
+@media screen and (max-width: 33em) {
+	td {
+		display: block;
+	}
+	tr {
+		padding: .5em .5em 1em;
+	}
+}
 
 /* Formular New */
 

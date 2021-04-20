@@ -10,6 +10,7 @@
 	<title>Strongly Typed by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -52,32 +53,40 @@
 		<!-- Main -->
 		<section id="main">
 			<div class="container">
-				<div class="search">
-					<i class="fas fa-search"></i> <input id="searchInput" type="search"></input>
+				<div>
+					<div class="search">
+						<i class="fas fa-search" style="margin-top: 1em; margin-right: 0.4em;"></i> <input id="searchInput" type="search" style="margin-top: 0.5em;"></input>
+					</div>
+					<div style="display: inline-flex;">
+						<a href="instructors_new.html" class="newButton">New Instructor</a>
+					</div>
 				</div>
-				<a href="instructors_new.html" class="newButton">New Instructor</a>
-				<table class="table">
-					<tr>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Status</th>
-					</tr>
-					<tr>
-						<td><a href="instructors_details1.html">Test1</a></td>
-						<td><a href="instructors_details1.html">Male</a></td>
-						<td><a href="instructors_details1.html">1234 5678901223</a></td>
-						<td><a href="instructors_details1.html">Test1@web.de</a></td>
-						<td><a href="instructors_details1.html">active</a></td>
-					</tr>
-					<tr>
-						<td>Test2</td>
-						<td>Male</td>
-						<td>46789579579778</td>
-						<td>Test2@web.de</td>
-						<td>active</td>
-					</tr>
+				<table class="table InstructorStudentTable">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Gender</th>
+							<th>Phone</th>
+							<th>Email</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="instructors_details1.html">Test1</a></td>
+							<td><a href="instructors_details1.html">Male</a></td>
+							<td><a href="instructors_details1.html">1234 5678901223</a></td>
+							<td><a href="instructors_details1.html">Test1@web.de</a></td>
+							<td><a href="instructors_details1.html">active</a></td>
+						</tr>
+						<tr>
+							<td>Test2</td>
+							<td>Male</td>
+							<td>46789579579778</td>
+							<td>Test2@web.de</td>
+							<td>active</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</section>
@@ -86,7 +95,7 @@
 		<section id="footer">
 			<div class="container">
 				<div class="col-6 col-12-medium">
-					
+
 				</div>
 			</div>
 	</div>

@@ -52,33 +52,41 @@
 		<!-- Main -->
 		<section id="main">
 			<div class="container">
-				<div class="search">
-					<i class="fas fa-search"></i> <input id="searchInput" type="search"></input>
+				<div>
+					<div class="search">
+						<i class="fas fa-search" style="margin-top: 1em; margin-right: 0.4em;"></i> 
+						<input id="searchInput" type="search" style="margin-top: 0.5em;"></input>
+					</div>
+					<div style="display: inline-flex;">
+						<a href="students_new.html" class="newButton">New Student</a>
+					</div>
 				</div>
-				<!-- <button type="button" onclick="<a href="students_new.html"></a>New Student</button> -->
-				<a href="students_new.html" class="newButton">New Student</a>
-				<table class="table">
-					<tr>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Status</th>
-					</tr>
-					<tr>
-						<td><a href="students_details1.html">TestStudent1</a></td>
-						<td><a href="students_details1.html">Male</a></td>
-						<td><a href="students_details1.html">1234 5678901223</a></td>
-						<td><a href="students_details1.html">TestStudent1@web.de</a></td>
-						<td><a href="students_details1.html">active</a></td>
-					</tr>
-					<tr>
-						<td>TestStudent2</td>
-						<td>Male</td>
-						<td>46789579579778</td>
-						<td>TestStudent2@web.de</td>
-						<td>active</td>
-					</tr>
+				<table class="table InstructorStudentTable">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Gender</th>
+							<th>Phone</th>
+							<th>Email</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="students_details1.html">TestStudent1</a></td>
+							<td><a href="students_details1.html">Male</a></td>
+							<td><a href="students_details1.html">1234 5678901223</a></td>
+							<td><a href="students_details1.html">TestStudent1@web.de</a></td>
+							<td><a href="students_details1.html">active</a></td>
+						</tr>
+						<tr>
+							<td>TestStudent2</td>
+							<td>Male</td>
+							<td>46789579579778</td>
+							<td>TestStudent2@web.de</td>
+							<td>active</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</section>
@@ -87,7 +95,7 @@
 		<section id="footer">
 			<div class="container">
 				<div class="col-6 col-12-medium">
-					
+
 				</div>
 			</div>
 	</div>
