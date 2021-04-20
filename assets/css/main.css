@@ -603,7 +603,6 @@ input, select, textarea {
 	form input[type="datetime"],
 	form select,
 	form textarea {
-		-webkit-appearance: none;
 		border: 0;
 		background: #e8e8e8;
 		width: 100%;
@@ -1762,6 +1761,12 @@ input, select, textarea {
 
 .togglebuttons {
 	margin-bottom: 0px;
+	padding-top: 0.6em;
+	padding-left: 1em;
+}
+
+.togglebuttons label {
+	margin-right: 0.7em;
 }
 
 .form-style-7 > div{
@@ -1769,6 +1774,7 @@ input, select, textarea {
 	padding:0;
 	margin:0;	
 }
+
 .form-style-7 > div > div{
 	display: block;
 	padding: 9px;
@@ -1776,8 +1782,6 @@ input, select, textarea {
 	margin-bottom: 30px;
 	border-radius: 3px;
 }
-
-
 
 .form-style-7 > div > label{
 	display: block;
@@ -1802,27 +1806,15 @@ input, select, textarea {
 .form-style-7 input[type="password"],
 .form-style-7 select
 {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	width: 100%;
 	display: block;
 	outline: none;
 	border: none;
-	height: 28px;
+	height: 32px;
 	line-height: 25px;
 	font-size: 16px;
-	padding: 1em;
+	padding: 0em 0em 0em 0.7em;
 	font-family: 'Source Sans Pro';
-}
-.form-style-7 select:after {
- 	content: "";
-  	top: 14px;
-  	right: 10px;
-  	width: 0;
-  	height: 0;
-  	border: 6px solid transparent;
-  	border-color: rgb(0, 0, 0) transparent transparent transparent;
 }
 
 .form-style-7 textarea {
@@ -1848,17 +1840,14 @@ input, select, textarea {
 
 .form-style-7 input[type="datetime"]
 {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	width: 100%;
 	display: block;
 	outline: none;
 	border: none;
-	height: 28px;
+	height: 32px;
 	line-height: 25px;
 	font-size: 16px;
-	padding-left: 0.2em;
+	padding: 0em 0em 0em 0.7em;
 	font-family: 'Source Sans Pro';
 }
 
